@@ -27,10 +27,17 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 
-/* Fill in information from Blynk Device Info here */
-// #define BLYNK_TEMPLATE_ID           "TMPxxxxxx"
-// #define BLYNK_TEMPLATE_NAME         "Device"
-// #define BLYNK_AUTH_TOKEN            "YourAuthToken"
+// *** MAIN SETTINGS ***
+// Replace this block with correct template settings [HTTPS LINK TO Console/Templates/TemplateID]
+
+#define BLYNK_TEMPLATE_ID "TMPLxxxxxx"      // TemplateID can be found in Console -> Templates -> Template 
+#define BLYNK_TEMPLATE_NAME "Template Name" // Template Name can be found in Console -> Templates -> Template
+#define BLYNK_AUTH_TOKEN "YourAuthToken"    // Each device needs a unique AuthToken. Create new device to obtain a new Auth Token
+#define WIFI_SSID "WiFi network name"       // Your WiFi network name
+#define WIFI_PASS "WiFi password"           // Your WiFi password. Double-check that it's correct. For open WiFi with no password, use "".
+
+// *********************
+
 #define DHTPIN 14
 #define DHTTYPE DHT21
 
